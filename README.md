@@ -34,13 +34,13 @@ Se você seguiu todos os passos e configurações corretamente, parabéns, seu p
 Abaixo segue um exemplo visual de como estão as telas do site (todas responsivas)
 
 ## Home
-![home]('Images/home.png')
+![home](Images/home.png)
 
 ## Listagem
-![listagem]('Images/listagem.png')
+![listagem](Images/listagem.png)
 
 ## Cadastro
-![cadastro]('Images/cadastro.png')
+![cadastro](Images/cadastro.png)
 
 ## Relatórios
-![relatorios]('Images/cadastro.png')
+![relatorios](Images/cadastro.png)
