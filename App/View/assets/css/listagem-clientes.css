@@ -1,0 +1,141 @@
+h2 {
+    font-size: 18px;
+    color: gray;
+    width: 100%;
+    font-weight: 400;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-container {
+    width: 100%;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead, tbody {
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: rgb(231, 63, 63);
+    border: solid 1px rgb(231, 63, 63);
+    color: white;
+}
+
+tr {
+    border: solid 1px #ccc;
+    border-top-color: none;
+}
+
+th, td{
+    padding: 10px;
+    width: 20%;
+}
+
+th {
+    border-bottom: solid 1px #ccc;
+}
+
+td {
+    text-align: center;
+}
+
+.actions div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    & a, button{
+        background-color: white;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: solid 1px;
+        cursor: pointer;
+        border-color: unset;
+        transition: 0.2s ease-in-out;
+        text-decoration: none;
+    }
+}
+
+.actions a {
+    border-color: rgb(20, 112, 233);
+    color: rgb(20, 112, 233);
+}
+
+.actions a:hover {
+    background-color: rgb(20, 112, 233);
+    border-color: rgb(20, 112, 233);
+    color: white;
+}
+
+.actions button {
+    border-color: rgb(238, 40, 40);
+    color: rgb(238, 40, 40);
+}
+
+.actions button:hover {
+    border-color: rgb(238, 40, 40);
+    background-color: rgb(238, 40, 40);
+    color: white;
+}
+
+.mobile-table {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.table-row {
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    width: 60%;
+
+    & span {
+        color: #9b9b9b;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    main {
+        padding: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        display: none;
+    }
+
+    .mobile-table {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .table-row {
+        width: 80%;
+    }
+}

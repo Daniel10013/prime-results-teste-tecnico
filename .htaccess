@@ -1,0 +1,10 @@
+<FilesMatch "\.(css|js|jpe?g|png|gif|ico|svg|webp)$">
+    Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-d       
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+</IfModule>

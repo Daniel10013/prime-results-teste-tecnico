@@ -1,0 +1,133 @@
+h2 {
+    font-size: 18px;
+    color: gray;
+    width: 100%;
+    font-weight: 400;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    gap: 20px;
+    border: solid 1px rgba(231, 63, 63, 0.322);
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(231, 63, 63, 0.452);
+}
+
+input{
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 26px;
+    border: solid 1px rgba(128, 128, 128, 0.308);
+    outline: none;
+}
+
+input:focus  {
+    transition: 0.2s ease-in-out;
+    border-color:rgba(231, 63, 63, 0.63);
+}
+
+.double-inputs {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+
+.buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: 0.2s ease-in-out;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 0px;
+    border-radius: 10px;
+}
+
+button[type="submit"] {
+    border: solid 1px rgb(12, 146, 12);
+    color: rgb(12, 146, 12);
+    background-color: white;
+}
+
+button[type="submit"]:hover {
+    border: solid 1px rgb(12, 146, 12);
+    color: white;
+    background-color: rgb(12, 146, 12);
+}
+
+button[type="reset"] {
+    border: solid 1px rgb(199, 45, 45);
+    color: rgb(199, 45, 45);
+    background-color: white;
+}
+
+button[type="reset"]:hover {
+    border: solid 1px rgb(199, 45, 45);
+    color: white;
+    background-color: rgb(199, 45, 45);
+}
+
+
+@media screen and (max-width: 950px) {
+    main {
+        padding: 70px 40px;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    main {
+        padding: 40px 20px;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    .double-inputs {
+        margin-left: -10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        & input {
+            width: 100%;
+        }
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+}
